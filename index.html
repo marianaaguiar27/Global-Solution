@@ -4,35 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/global.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Index</h1>
+    <header id="topo">
+        <div class="container">
+            <div class="logo">
+                <h1>Index</h1>
+            </div>
+            <nav class="main-nav" aria-label="Navegação principal">
             <ul>
                 <li><a href="pages/sobre.html">Sobre o projeto</a></li>
                 <li><a href="pages/integrantes.html">Quem somos</a></li>
-                <li><a href="pages/contato.html">Entre em contato conosco!</a></li>
+                <li><a href="pages/contato.html">Entrar em contato</a></li>
                 <li><a href="pages/faq.html">FAQ</a></li>
             </ul>
         </nav>
+            <div class="actions">
+                <a href="#login" class="link-login">Login</a>
+                <a href="#cadastro" class="link-cadastro">Cadastrar</a>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
-            <aside>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio blanditiis nisi numquam distinctio doloremque illum, minus adipisci aliquid voluptate quod at. Placeat exercitationem molestiae, repudiandae molestias commodi sunt totam officia corporis amet tempora, necessitatibus nam voluptatum a accusamus cumque modi obcaecati neque minima quisquam incidunt, est magni nulla numquam? Dolorum!</p>
-            </aside>
+        <section id="hero" role="region" aria-label="Destaque principal">
+            <div class="container">
+                <h2>Aprenda hoje o que o futuro vai pedir amanhã.</h2>
+                <p>Cada curso foi criado para facilitar sua jornada profissional, fortalecendo suas competências para enfrentar um mercado cada vez mais digital e dinâmico.</p>
+                <form class="hero-search" action="#" method="get" role="search">
+                    <label for="q" class="sr-only">O que você quer aprender?</label>
+                    <input id="q" name="q" type="search" placeholder="Ex.: Tecnologia, Excel..."/>
+                    <button type="submit"></button>
+                </form>
+            </div>
+        </section>
+
+        <section id="cursos" aria-label="Áreas de Interesse">
+            <div class="container">
+                <small>Áreas de Interesse</small>
+                <h3>Aproveite para aprender mais sobre:</h3>
+                <div class="cards">
+                    <article class="card" tabindex="0">
+                        <h4>Curso 1</h4>
+                        <p>Introdução ao Curso 1</p>
+                    </article>
+                    <article class="card" tabindex="0">
+                        <h4>Curso 2</h4>
+                        <p>Introdução ao Curso 2</p>
+                    </article>
+                    <article class="card" tabindex="0">
+                        <h4>Curso 3</h4>
+                        <p>Introdução ao Curso 3</p>
+                    </article>
+                    <article class="card" tabindex="0">
+                        <h4>Curso 4</h4>
+                        <p>Introdução ao Curso 4</p>
+                    </article>
+                    <article class="card" tabindex="0">
+                        <h4>Curso 5</h4>
+                        <p>Introdução ao Curso 5</p>
+                    </article>
+                </div>
+                    <p>
+                        <a href="#todos-cursos" class="btn-show">Mostrar todos os cursos</a>
+                    </p>
+            </div>
         </section>
     </main>
-    <footer>
-    <nav>
-        <ul>
-            <li><a href="https://www.instagram.com" target="_blank">instagram</a></li>
-            <li><a href="https://www.facebook.com"  target="_blank">facebook</a></li>
-            <li><a href="https://www.linkedin.com" target="_blank">linkedin</a></li>
-        </ul>
-    </nav>    
-    <p>&copy; Todos os direitos reservados - 2025. GS</p>
-</footer>
+    <footer id="rodape">
+        <div class="container">
+            <div class="footer-left">
+                <p>&copy; Todos os direitos reservados - 2025. GS</p>
+            </div>
+            <div class="footer-right">
+              <nav>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="./assets/img/img-05-instagram-white-icon.png" alt="Instagram" class="icone"></a></li>
+                    <li><a href="https://www.facebook.com"  target="_blank"><img src="./assets/img/img-06-facebook-white-icon.png" alt="Facebook" class="icone"></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank"><img src="./assets/img/img-13-linkedin-logo.png" alt="Linkedin" class="icone"></a></li>
+                </ul>
+              </nav> 
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
