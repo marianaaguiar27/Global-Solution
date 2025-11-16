@@ -4,35 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/global.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Entre em contato conosco!</h1>
+    <div class="content-wrapper">
+    <header id="topo">
+        <div class="container">
+            <div class="logo">
+                <h1>Entre em contato conosco</h1>
+            </div>
+            <nav class="main-nav" aria-label="Navegação principal">
             <ul>
-                <li><a href="../index.html">Index</a></li>
-                <li><a href="./integrantes.html">Quem somos</a></li>
-                <li><a href="./contato.html">Entre em contato conosco!</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="integrantes.html">Quem somos</a></li>
+                <li><a href="sobre.html">Sobre o Projeto</a></li>
+                <li><a href="faq.html">FAQ</a></li>
             </ul>
         </nav>
+            <div class="actions">
+                <a href="#login" class="link-login">Login</a>
+                <a href="#cadastro" class="link-cadastro">Cadastrar</a>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
+        <div class="contato-conteudo-wrapper">
+        <section class="coluna-form">
             <aside>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio blanditiis nisi numquam distinctio doloremque illum, minus adipisci aliquid voluptate quod at. Placeat exercitationem molestiae, repudiandae molestias commodi sunt totam officia corporis amet tempora, necessitatibus nam voluptatum a accusamus cumque modi obcaecati neque minima quisquam incidunt, est magni nulla numquam? Dolorum!</p>
+                 <h2>Dúvidas, reclamações ou sugestões</h2>
+                <form id="formContato">
+                    <input type="text" id="nome" placeholder="Seu nome">
+                    <div id="wrap-contato">
+                        <input type="text" id="email" placeholder="Seu e-mail">
+                        <input type="text" id="telefone" placeholder="Seu Telefone">
+                    </div>
+                    <input type="text" id="assunto" placeholder="Assunto">
+                    <input type="text" id="mensagem" placeholder="Sua mensagem">
+                    <button type="submit">Enviar</button>
+                </form>
+                <p id="statusMsg" style="margin-top: 10px; font-weight: bold;"></p>
             </aside>
         </section>
+        <section class="coluna-imagem">
+            <img src="../assets/img/usando-smartphone.png" alt="Pessoa usando smartphone" class="imagem-contato">
+        </section>
+        </div>
     </main>
-    <footer>
-    <nav>
-        <ul>
-            <li><a href="https://www.instagram.com" target="_blank">instagram</a></li>
-            <li><a href="https://www.facebook.com"  target="_blank">facebook</a></li>
-            <li><a href="https://www.linkedin.com" target="_blank">linkedin</a></li>
-        </ul>
-    </nav>    
-    <p>&copy; Todos os direitos reservados - 2025. GS</p>
-</footer>
+    </div>
+    <footer id="rodape">
+        <div class="container">
+            <div class="footer-left">
+                <p>&copy; Todos os direitos reservados - 2025. GS</p>
+            </div>
+            <div class="footer-right">
+              <nav>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="../assets/img/img-05-instagram-white-icon.png" alt="Instagram" class="icone"></a></li>
+                    <li><a href="https://www.facebook.com"  target="_blank"><img src="../assets/img/img-06-facebook-white-icon.png" alt="Facebook" class="icone"></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank"><img src="../assets/img/img-13-linkedin-logo.png" alt="Linkedin" class="icone"></a></li>
+                </ul>
+              </nav> 
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

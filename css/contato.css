@@ -1,0 +1,188 @@
+html, body {
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+}
+
+.content-wrapper { 
+    flex: 1; 
+}
+header {
+    background: #1e1e1e;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.actions a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.link-cadastro {
+    background: dodgerblue;
+}
+
+main {
+    padding: 0;
+    display: block;
+    justify-content: unset;
+    align-items: unset;
+}
+
+section {
+    display: block;
+    justify-content: unset;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contato-conteudo-wrapper {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 50px;
+}
+
+.coluna-form {
+    flex: 1;
+    max-width: 60%;
+    padding-top: 10px;
+}
+
+aside {
+    width: 100%;
+        a {
+           text-decoration: none;
+        }
+    }
+
+.coluna-imagem {
+    flex: 1;
+    max-width: 40%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-contato {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+
+h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #1e1e1e;
+    padding-block: 2rem;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid dodgerblue;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+#wrap-contato {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 1rem;
+    width: 100%;
+}
+
+#wrap-contato input {
+    width: calc(50% - 00.5rem);
+}
+
+button {
+    background: dodgerblue;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: dodgerblue;
+    transform: scale(1.05);
+} 
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer {
+    background: #1e1e1e;
+    color: white;
+    padding: 30px 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+footer li{
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.icone {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
