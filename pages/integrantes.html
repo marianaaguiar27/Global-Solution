@@ -4,35 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/integrantes.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Nossa Equipe</h1>
+    <div class="content-wrapper">
+    <header id="topo">
+        <div class="container">
+            <div class="logo">
+                <h1>Nossa Equipe</h1>
+            </div>
+            <nav class="main-nav" aria-label="Navegação principal">
             <ul>
-                <li><a href="../index.html">Index</a></li>
-                <li><a href="./sobre.html">Sobre o Projeto</a></li>
-                <li><a href="./contato.html">Entre em contato conosco!</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre o Projeto</a></li>
+                <li><a href="contato.html">Entrar em contato</a></li>
+                <li><a href="faq.html">FAQ</a></li>
             </ul>
         </nav>
+            <div class="actions">
+                <a href="#login" class="link-login">Login</a>
+                <a href="#cadastro" class="link-cadastro">Cadastrar</a>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
-            <aside>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio blanditiis nisi numquam distinctio doloremque illum, minus adipisci aliquid voluptate quod at. Placeat exercitationem molestiae, repudiandae molestias commodi sunt totam officia corporis amet tempora, necessitatibus nam voluptatum a accusamus cumque modi obcaecati neque minima quisquam incidunt, est magni nulla numquam? Dolorum!</p>
-            </aside>
+        <section class="secao-membros">
+            <div class="container">
+                <h1>Conheça Nossa Equipe</h1>
+                <div class="card-membro">
+                    <div class="membro-foto">
+                        <img src="../assets/img/img-14-foto-integrante.jpg" alt="Foto da Manuella Rinaldi">
+                        <div class="barra-colorida-membro"></div>
+                    </div>
+                    <div class="membro-info">
+                        <h2>Manuella Rinaldi</h2>
+                        <h3>Estudante da FIAP</h3>
+                        <p>Atualmente cursando Tecnologia em Análise e Desenvolvimento de Sistemas.</p>
+                        <a href= "https://www.linkedin.com/in/manuellarinaldii" class="link-social" target="blank">LinkedIn</a>
+                        <a href="https://github.com/manuellarinaldi" class="link-social" target="blank">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="card-membro reverse">
+                    <div class="membro-info">
+                        <h2>Gustavo Miguel</h2>
+                        <h3>Estudante da FIAP</h3>
+                        <p>Atualmente cursando Tecnologia em Análise e Desenvolvimento de Sistemas.</p>
+                        <a href="https://www.linkedin.com/in/gustavo-miguel-dev/" class="link-social" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/GustavoMiguelk" class="link-social" target="_blank">GitHub</a>
+                    </div>
+                    <div class="membro-foto">
+                        <img src="../assets/img/img-15-foto-integrante.jpg" alt="Foto do Gustavo Miguel">
+                        <div class="barra-colorida-membro"></div>
+                    </div>
+                </div>
+
+                 <div class="card-membro">
+                    <div class="membro-foto">
+                        <img src="../assets/img/img-16-foto-integrante.jpg" alt="Foto da Mariana Aguiar">
+                        <div class="barra-colorida-membro"></div>
+                    </div>
+                    <div class="membro-info">
+                        <h2>Mariana Aguiar</h2>
+                        <h3>Estudante da FIAP</h3>
+                        <p>Atualmente cursando Tecnologia em Análise e Desenvolvimento de Sistemas.</p>
+                        <a href="https://www.linkedin.com/in/mariana-de-paula-aguiar-149b34389/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="link-social" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/marianaaguiar27" class="link-social" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-    <nav>
-        <ul>
-            <li><a href="https://www.instagram.com" target="_blank">instagram</a></li>
-            <li><a href="https://www.facebook.com"  target="_blank">facebook</a></li>
-            <li><a href="https://www.linkedin.com" target="_blank">linkedin</a></li>
-        </ul>
-    </nav>    
-    <p>&copy; Todos os direitos reservados - 2025. GS</p>
-</footer>
+    </div>
+     <footer id="rodape">
+        <div class="container">
+            <div class="footer-left">
+                <p>&copy; Todos os direitos reservados - 2025. GS</p>
+            </div>
+            <div class="footer-right">
+              <nav>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="../assets/img/img-05-instagram-white-icon.png" alt="Instagram" class="icone"></a></li>
+                    <li><a href="https://www.facebook.com"  target="_blank"><img src="../assets/img/img-06-facebook-white-icon.png" alt="Facebook" class="icone"></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank"><img src="../assets/img/img-13-linkedin-logo.png" alt="Linkedin" class="icone"></a></li>
+                </ul>
+              </nav> 
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
