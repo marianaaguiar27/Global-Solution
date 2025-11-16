@@ -37,7 +37,7 @@ header .container {
 #hero {
     background: url(../assets/img/mulher-de-tiro-medio-segurando-laptop.jpg) center/cover no-repeat;
     color: white;
-    padding: 130px;
+    padding: 200px;
     text-align: center;
 }
 
@@ -74,7 +74,7 @@ header .container {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background-image: url(../assets/img/87-872187_lupa-search-icon-white-png.png);
+    background-image: url(../assets/img/icone-lupa.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%;
