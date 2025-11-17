@@ -12,7 +12,7 @@ header .container {
 
 .main-nav ul {
     display: flex;
-    gap: 25px;
+    gap: 15px;
     list-style: none;
 }
 
