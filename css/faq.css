@@ -1,7 +1,6 @@
+/* Define altura da página */
 html, body {
     height: 100%;
-    margin: 0; 
-    padding: 0;
 }
 
 body {
@@ -12,6 +11,8 @@ body {
 .content-wrapper { 
     flex: 1; 
 }
+
+/* Estiliza o header */
 header {
     background: #1e1e1e;
     color: white;
@@ -53,11 +54,7 @@ header .container {
     margin: 0;
 }
 
-.logo-img {
-    height: 50px; 
-    width: auto;
-}
-
+/* Menu nav principal */
 .main-nav ul {
     display: flex;
     gap: 25px;
@@ -70,6 +67,7 @@ header .container {
     font-size: 14px;
 }
 
+/* Botões de login/cadastro */
 .actions a {
     margin-left: 15px;
     color: white;
@@ -82,12 +80,14 @@ header .container {
     background: dodgerblue;
 }
 
+/* Seção FAQ */
 .secao-faq .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
+/* Título do FAQ */
 .faq-titulo {
     font-size: 2.5rem;
     font-weight: 700;
@@ -97,6 +97,7 @@ header .container {
     margin-bottom: 50px;
 }
 
+/* Listas de perguntas e respostas*/
 .faq-lista {
     border-top: 1px solid #ddd;
 }
@@ -121,6 +122,7 @@ faq.resposta {
     margin: 0;
 }
 
+/* Layout do footer */
 footer .container{
     display: flex;
     justify-content: center;
@@ -158,6 +160,9 @@ footer a {
     vertical-align: middle;
 }
 
+/*Responsividade*/
+
+/* Ajustes para telas médias */
 @media (max-width: 1200px) {
     .secao-faq .container {
         max-width: 750px; 
@@ -200,6 +205,7 @@ footer a {
     }
 }
 
+/* Ajustes para tablets */
 @media (max-width: 768px) {
     
     header {
@@ -279,6 +285,7 @@ footer a {
     }
 }
 
+/* Ajustes para celulares */
 @media (max-width: 480px) {
     .logo h1 {
         font-size: 1.1rem; 

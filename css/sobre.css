@@ -1,9 +1,7 @@
+/* Define altura da página */
 html, body {
     height: 100%;
-    margin: 0; 
-    padding: 0;
 }
-
 body {
     display: flex;
     flex-direction: column; 
@@ -12,6 +10,8 @@ body {
 .content-wrapper { 
     flex: 1; 
 }
+
+/* Estiliza o header */
 header {
     background: #1e1e1e;
     color: white;
@@ -53,10 +53,7 @@ header .container {
     margin: 0;
 }
 
-.logo-img {
-    height: 50px; 
-    width: auto;
-}
+/* Menu nav principal */
 .main-nav ul {
     display: flex;
     gap: 25px;
@@ -69,6 +66,7 @@ header .container {
     font-size: 14px;
 }
 
+/* Botões de login/cadastro */
 .actions a {
     margin-left: 15px;
     color: white;
@@ -81,7 +79,7 @@ header .container {
     background: dodgerblue;
 }
 
-
+/* Container da seção sobre */
 .secao-sobre .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -92,6 +90,7 @@ header .container {
     gap: 40px;
 }
 
+/* Coluna de texto */
 .conteudo-texto {
     flex: 1;
     max-width: 55%;
@@ -124,6 +123,8 @@ header .container {
     margin-bottom: 1%;
     color: #000000;
 }
+
+/* Imagem principal */
 .conteudo-img {
     flex: 1;
     max-width: 45%;
@@ -136,6 +137,7 @@ header .container {
     display: block;
 }
 
+/* Barra colorida */
 .barra-colorida {
     position: absolute;
     bottom: 20px;
@@ -145,6 +147,7 @@ header .container {
     background: linear-gradient(to right, dodgerblue, white);
 }
 
+/* Layout do footer */
 footer .container{
     display: flex;
     justify-content: center;
@@ -181,6 +184,10 @@ footer a {
     height: 30px;
     vertical-align: middle;
 }
+
+/*Responsividade*/
+
+/* Ajustes para telas médias */
 @media (max-width: 1024px) {
     header .container {
         padding: 20px 15px 20px 60px; 
@@ -217,6 +224,7 @@ footer a {
     }
 }
 
+/* Ajustes para tablets */
 @media (max-width: 768px) {
     header {
         padding: 10px 0; 
@@ -297,7 +305,7 @@ footer a {
     }
 }
 
-
+/* Ajustes para celulares */
 @media (max-width: 480px) {
     .logo h1 {
         font-size: 1rem; 

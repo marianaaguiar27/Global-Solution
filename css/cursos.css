@@ -1,7 +1,6 @@
+/* Define altura da página */
 html, body {
     height: 100%;
-    margin: 0; 
-    padding: 0;
 }
 
 body {
@@ -12,6 +11,8 @@ body {
 .content-wrapper { 
     flex: 1; 
 }
+
+/* Estiliza o header */
 header {
     background: #1e1e1e;
     color: white;
@@ -53,11 +54,7 @@ header .container {
     margin: 0;
 }
 
-.logo-img {
-    height: 50px; 
-    width: auto;
-}
-
+/* Menu nav principal */
 .main-nav ul {
     display: flex;
     gap: 25px;
@@ -70,6 +67,7 @@ header .container {
     font-size: 14px;
 }
 
+/* Botões de login/cadastro */
 .actions a {
     margin-left: 15px;
     color: white;
@@ -82,6 +80,7 @@ header .container {
     background: dodgerblue;
 }
 
+/* Seção dos Cursos */
 .secao-cursos {
     background-color: #f7f7f7;
     padding-top: 50px;
@@ -126,12 +125,14 @@ header .container {
     font-weight: 600;
 }
 
+/* Grade dos cards */
 .cursos-grid {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 30px;
 }
 
+/*Estilização dos cards*/
 .card-curso {
     display: flex;
     justify-content: space-between;
@@ -149,6 +150,7 @@ header .container {
     transform: translateY(-4px);
 }
 
+/*Área do texto dentro do card*/
 .info-curso {
     flex: 1;
     margin-right: 20px;
@@ -169,6 +171,7 @@ header .container {
     margin-bottom: 15px;
 }
 
+/*Linha com informações/detalhes*/
 .detalhes {
     font-size: 0.9rem;
     color: #888;
@@ -177,6 +180,7 @@ header .container {
     gap: 10px;
 }
 
+/*Tags de nível*/
 .nivel-avancado, .nivel-iniciante {
     font-weight: 700;
     padding: 3px 8px;
@@ -193,14 +197,7 @@ header .container {
     color: dodgerblue;
 }
 
-.favorito {
-    font-size: 1.5rem;
-    cursor: pointer;
-    flex-shrink: 0;
-    color: #ccc;
-}
-
-
+/* Layout do footer */
 footer .container{
     display: flex;
     justify-content: center;
@@ -238,6 +235,9 @@ footer a {
     vertical-align: middle;
 }
 
+/*Responsividade*/
+
+/* Ajustes para telas médias */
 @media (max-width: 1200px) {
     .container-cursos {
         max-width: 95%; 
@@ -280,6 +280,7 @@ footer a {
     }
 }
 
+/* Ajustes para tablets */
 @media (max-width: 768px) {
     header {
         padding: 10px 0;
@@ -374,6 +375,7 @@ footer a {
     }
 }
 
+/* Ajustes para celulares */
 @media (max-width: 480px) {
     .logo h1 {
         font-size: 1rem; 

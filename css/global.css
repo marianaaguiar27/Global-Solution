@@ -1,9 +1,10 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Fonte, cor do fundo, cor do texto e espaçamento entre linhas do site */
 body {
     font-family: Arial, sans-serif;
     background: #ffffff;
@@ -11,6 +12,7 @@ body {
     line-height: 1.5;
 }
 
+/* Centraliza e limita a largura */
 .container {
     max-width: 1100px;
     margin: 0 auto;

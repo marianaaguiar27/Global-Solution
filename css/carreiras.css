@@ -1,7 +1,6 @@
+/* Define altura da página */
 html, body {
     height: 100%;
-    margin: 0; 
-    padding: 0;
 }
 
 body {
@@ -12,6 +11,8 @@ body {
 .content-wrapper { 
     flex: 1; 
 }
+
+/* Estiliza o header */
 header {
     background: #1e1e1e;
     color: white;
@@ -56,11 +57,7 @@ header .container {
     margin: 0;
 }
 
-.logo-img {
-    height: 50px; 
-    width: auto;
-}
-
+/* Menu nav principal */
 .main-nav ul {
     display: flex;
     gap: 25px;
@@ -75,6 +72,7 @@ header .container {
     font-size: 14px;
 }
 
+/* Botões de login/cadastro */
 .actions a {
     margin-left: 15px;
     color: white;
@@ -87,6 +85,7 @@ header .container {
     background: dodgerblue;
 }
 
+/*Seção geral da página das vagas*/
 .secao-carreiras {
     padding: 80px 0;
     background-color: #f7f7f7f7;
@@ -112,6 +111,7 @@ header .container {
     margin-bottom: 40px;
 }
 
+/*Grade que organiza os cards das vagas*/
 .vagas-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -120,6 +120,7 @@ header .container {
     padding: 20px;
 }
 
+/*Card individual da vaga*/
 .card-vaga {
     background: white;
     padding: 20px;
@@ -142,6 +143,7 @@ header .container {
     margin-bottom: 5px;
 }
 
+/*Nome da empresa fictícia*/
 .empresa {
     font-size: 0.95rem;
     color: #555;
@@ -163,6 +165,7 @@ header .container {
     font-weight: 600;
 }
 
+/*Local da vaga*/
 .local {
     background-color: darkblue;
 }
@@ -171,6 +174,7 @@ header .container {
     background-color: #111111;
 }
 
+/*Botão para saber mais sobre*/
 .btn-detalhes {
     display: block;
     padding: 10px;
@@ -186,6 +190,7 @@ header .container {
     background: #003f5c;
 }
 
+/* Layout do footer */
 footer .container{
     display: flex;
     justify-content: center;
@@ -223,6 +228,9 @@ footer a {
     vertical-align: middle;
 }
 
+/*Responsividade*/
+
+/* Ajustes para telas médias */
 @media (max-width: 992px) {    
     header .container {
         padding: 20px 15px 20px 50px; 
@@ -248,6 +256,7 @@ footer a {
     }
 }
 
+/* Ajustes para tablets */
 @media (max-width: 768px) {    
     header {
         padding: 10px 0;
@@ -335,6 +344,7 @@ footer a {
     }
 }
 
+/* Ajustes para celulares */
 @media (max-width: 480px) {
     .logo h1 {
         font-size: 1rem; 

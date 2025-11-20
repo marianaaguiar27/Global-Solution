@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <!--Arquivos CSS-->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/global.css">
 </head>
 <body>
+
+    <!--Início do Header-->
     <header id="topo">
         <div class="container">
+            <!--Área da logo e título-->
             <div class="logo">
             <div class="logo-principal">
                 <img src="./assets/img/logo_index.png" alt="Logo da TechLearn" class="logo-principal-img">
             </div>
                 <h1>TechLearn</h1>
             </div>
+            <!--Menu de navegação-->
             <nav class="main-nav" aria-label="Navegação principal">
             <ul>
                 <li><a href="pages/sobre.html">Sobre o projeto</a></li> 
@@ -26,17 +31,22 @@
                 <li><a href="pages/carreiras.html">Vagas</a></li> 
             </ul>
         </nav>
+        <!--Botões de login e cadastro-->
             <div class="actions">
                 <a href="#login" class="link-login">Login</a>
                 <a href="#cadastro" class="link-cadastro">Cadastrar</a>
             </div>
         </div>
     </header>
+    <!--Fim da Hader-->
+
+    <!--Conteúdo Principal-->
     <main>
         <section id="hero" role="region" aria-label="Destaque principal">
             <div class="container">
                 <h2>Aprenda hoje o que o futuro vai pedir amanhã.</h2>
                 <p>Cada curso foi criado para facilitar sua jornada profissional, fortalecendo suas competências para enfrentar um mercado cada vez mais digital e dinâmico.</p>
+                <!--Barra e campo de pesquisa-->
                 <form class="hero-search" action="#" method="get" role="search">
                     <label for="q" class="sr-only">O que você quer aprender?</label>
                     <input id="q" name="q" type="search" placeholder="Ex.: Tecnologia, Excel..."/>
@@ -44,12 +54,13 @@
                 </form>
             </div>
         </section>
-
+        <!--Cursos-->
         <section id="cursos" aria-label="Áreas de Interesse">
             <div class="container">
                 <small>Áreas de Interesse</small>
                 <h3>Aproveite para aprender mais sobre:</h3>
                 <div class="cards">
+                    <!--Cards dos cursos-->
                     <article class="card" tabindex="0">
                         <h4>Curso 1</h4>
                         <p>Introdução ao Curso 1</p>
@@ -71,17 +82,22 @@
                         <p>Introdução ao Curso 5</p>
                     </article>
                 </div>
+                <!--Botão para ver todos os cursos-->
                     <p>
                         <a href="./pages/cursos.html" class="btn-show">Mostrar todos os cursos</a>
                     </p>
             </div>
         </section>
     </main>
+    <!--Fim do conteúdo principal-->
+
+    <!--Início do rodapé-->
     <footer id="rodape">
         <div class="container">
             <div class="footer-left">
                 <p>&copy; Todos os direitos reservados - 2025. GS</p>
             </div>
+            <!--Ícone das redes sociais-->
             <div class="footer-right">
               <nav>
                 <ul>
@@ -93,5 +109,7 @@
             </div>
         </div>
     </footer>
+    <!--Fim do rodapé-->
+
 </body>
 </html>

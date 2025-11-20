@@ -1,3 +1,4 @@
+/* Estiliza o header */
 header {
     background: #1e1e1e;
     color: white;
@@ -40,11 +41,7 @@ header .container {
     margin: 0;
 }
 
-.logo-img {
-    height: 50px; 
-    width: auto;
-}
-
+/* Menu nav principal */
 .main-nav ul {
     display: flex;
     gap: 15px;
@@ -57,6 +54,7 @@ header .container {
     font-size: 14px;
 }
 
+/* Botões de login/cadastro */
 .actions a {
     margin-left: 15px;
     color: white;
@@ -69,6 +67,7 @@ header .container {
     background: dodgerblue;
 }
 
+/*Imagem do Banner*/
 #hero {
     background: url(../assets/img/mulher-de-tiro-medio-segurando-laptop.jpg) center/cover no-repeat;
     color: white;
@@ -86,6 +85,7 @@ header .container {
     opacity: 0.9;
 }
 
+/*Barra de busca*/
 .hero-search {
     margin-top: 30px;
     display: flex;
@@ -115,6 +115,7 @@ header .container {
     background-size: 60%;
 }
 
+/*Seção dos cursos*/
 #cursos {
     background: #f5f5f5;
     padding: 50px 20px;
@@ -132,6 +133,7 @@ header .container {
     justify-content: center;
 }
 
+/*Cards dos cursos*/
 .card {
     background: white;
     width: 200px;
@@ -146,6 +148,7 @@ header .container {
     transform: translateY(-5px);
 }
 
+/*Botão para abrir a página dos cursos*/
 .btn-show {
     display: inline-block;
     margin-top: 30px;
@@ -156,6 +159,7 @@ header .container {
     border-radius: 30px;
 }
 
+/*Layout do Footer*/
 footer .container{
     display: flex;
     justify-content: center;
@@ -193,6 +197,9 @@ footer a {
     vertical-align: middle;
 }
 
+/*Responsividade*/
+
+/* Ajustes para telas médias */
 @media (max-width: 1024px) {
     header .container {
         padding: 20px 15px 20px 60px; 
@@ -226,6 +233,7 @@ footer a {
     }
 }
 
+/* Ajustes para tablets */
 @media (max-width: 768px) {
     header {
         padding: 10px 0; 
@@ -310,6 +318,7 @@ footer a {
     }
 }
 
+/* Ajustes para celulares */
 @media (max-width: 480px) {
     .logo h1 {
         font-size: 1.1rem; 
