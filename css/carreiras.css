@@ -222,3 +222,138 @@ footer a {
     height: 30px;
     vertical-align: middle;
 }
+
+@media (max-width: 992px) {    
+    header .container {
+        padding: 20px 15px 20px 50px; 
+    }
+
+    .logo-principal {
+        left: -30px; 
+        width: 60px;
+        transform: translateY(-50%) scale(0.75); 
+    }
+    
+    .main-nav ul {
+        gap: 15px; 
+    }
+    .container-carreiras {
+        max-width: 95%; 
+    }
+
+    .vagas-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {    
+    header {
+        padding: 10px 0;
+    }
+    
+    header .container {
+        padding: 10px 20px; 
+        flex-wrap: nowrap;
+        justify-content: space-between; 
+        align-items: center; 
+        gap: 10px;
+    }
+    
+    .main-nav {
+        display: none; 
+    }
+
+    .logo-principal {
+        position: static; 
+        transform: none;
+        width: 35px; 
+        margin-right: 10px; 
+        flex-shrink: 0;
+    }
+
+    .logo {
+        flex-grow: 1; 
+        gap: 10px;
+        min-width: 0; 
+    }
+
+    .logo h1 {
+        font-size: 1.2rem; 
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+
+    .actions {
+        flex-shrink: 0; 
+        margin-left: auto; 
+    }
+    
+    .actions a {
+        padding: 4px 8px; 
+        font-size: 13px;
+        margin-left: 5px; 
+    }
+    
+    .secao-carreiras {
+        padding: 40px 0;
+    }
+    
+    .container-carreiras h2 {
+        font-size: 2rem;
+    }
+    
+    .container-carreiras p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .vagas-grid {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+        padding: 0 10px; 
+    }
+
+    .titulo-vaga {
+        font-size: 1.1rem;
+    }
+    
+    .card-vaga {
+        padding: 15px;
+    }
+        
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    footer ul {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1rem; 
+    }
+    
+    .actions a {
+        padding: 3px 6px; 
+        font-size: 12px;
+    }
+    
+    .container-carreiras h2 {
+        font-size: 1.6rem;
+    }
+    
+    .card-vaga {
+        padding: 12px;
+    }
+
+    .tag {
+        font-size: 0.75rem; 
+    }
+}

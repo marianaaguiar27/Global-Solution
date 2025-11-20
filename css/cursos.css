@@ -237,3 +237,171 @@ footer a {
     height: 30px;
     vertical-align: middle;
 }
+
+@media (max-width: 1200px) {
+    .container-cursos {
+        max-width: 95%; 
+    }
+}
+
+@media (max-width: 992px) {
+    header .container {
+        padding: 20px 15px 20px 50px; 
+    }
+
+    .logo-principal {
+        left: -30px; 
+        width: 60px;
+        transform: translateY(-50%); 
+    }
+    
+    .main-nav ul {
+        gap: 15px; 
+    }
+
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+    .cursos-grid {
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .card-curso {
+        padding: 20px;
+    }
+
+    .info-curso h4 {
+        font-size: 1.2rem;
+    }
+
+    .info-curso p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+    
+    header .container {
+        padding: 10px 20px; 
+        flex-wrap: nowrap; 
+        justify-content: space-between; 
+        align-items: center; 
+        gap: 10px;
+    }
+    
+    .main-nav {
+        display: none; 
+    }
+    
+    .logo-principal {
+        position: static; 
+        transform: none;
+        width: 35px; 
+        margin-right: 15px; 
+        flex-shrink: 0;
+    }
+
+    .logo {
+        flex-grow: 1; 
+        gap: 10px; 
+        min-width: 0; 
+    }
+
+    .logo h1 {
+        font-size: 1.2rem; 
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+
+    .actions {
+        flex-shrink: 0; 
+        margin-left: auto; 
+    }
+    
+    .actions a {
+        padding: 4px 8px; 
+        font-size: 13px;
+        margin-left: 5px; 
+    }
+    
+    .secao-cursos {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    
+    .container-cursos h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .cursos-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .card-curso {
+        flex-direction: column; 
+        padding: 15px;
+    }
+
+    .info-curso h4 {
+        font-size: 1.2rem;
+    }
+
+    .info-curso p {
+        font-size: 0.95rem;
+    }
+
+    .detalhes {
+        flex-wrap: wrap; 
+        margin-top: 10px;
+    }
+        
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    footer ul {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1rem; 
+    }
+    
+    .actions a {
+        padding: 3px 6px; 
+        font-size: 11px;
+    }
+    
+    .container-cursos h2 {
+        font-size: 1.6rem;
+    }
+
+    .cursos-header {
+        padding: 0 5px 10px 5px;
+        font-size: 0.9rem;
+    }
+
+    .card-curso {
+        padding: 10px;
+    }
+    
+    .info-curso h4 {
+        font-size: 1rem;
+    }
+    
+    .info-curso p {
+        font-size: 0.85rem;
+    }
+}

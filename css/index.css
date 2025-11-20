@@ -12,6 +12,7 @@ header .container {
     position: relative;
 }
 
+
 .logo-principal {
     position: absolute;
     left: -100px;
@@ -190,4 +191,185 @@ footer a {
     width: 30px;
     height: 30px;
     vertical-align: middle;
+}
+
+@media (max-width: 1024px) {
+    header .container {
+        padding: 20px 15px 20px 60px; 
+    }
+
+    .logo-principal {
+        left: -30px; 
+        width: 60px;
+    }
+    
+    .main-nav ul {
+        gap: 15px; 
+    }
+    
+    .logo h1 {
+        font-size: 1.6rem; 
+    }
+
+    #hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 95%;
+    }
+
+    #cursos h3 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0; 
+    }
+    
+    header .container {
+        padding: 10px 20px; 
+        flex-wrap: nowrap; 
+        gap: 10px;
+    }
+    
+    .main-nav {
+        display: none; 
+    }
+    
+    .logo-principal {
+        position: static; 
+        transform: none;
+        width: 35px; 
+        margin-right: 15px; 
+        flex-shrink: 0;
+    }
+
+    .logo {
+        flex-grow: 1; 
+        min-width: 0; 
+    }
+
+    .logo h1 {
+        font-size: 1.4rem; 
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+
+    .actions a {
+        padding: 4px 8px; 
+        font-size: 13px;
+        margin-left: 5px; 
+    }
+
+    #hero {
+        padding: 60px 0;
+    }
+    
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .hero-search {
+        max-width: 90%;
+    }
+
+    #cursos {
+        padding: 40px 0;
+    }
+    
+    #cursos h3 {
+        font-size: 1.8rem;
+    }
+    
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left {
+        order: 2;
+    }
+
+    .footer-right {
+        order: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.1rem; 
+    }
+    
+    .actions a {
+        padding: 3px 6px; 
+        font-size: 11px;
+    }
+
+    #hero {
+        padding: 60px 10px; 
+    }
+    
+    #hero h2 {
+        font-size: 1.4rem; 
+    }
+
+    #hero p {
+        font-size: 0.9rem;
+    }
+    
+    .hero-search {
+        display: block; 
+        max-width: 90%; 
+    }
+    
+    .hero-search input {
+        width: 100%; 
+        padding: 12px 15px; 
+        font-size: 0.9rem;
+        margin-bottom: 10px; 
+    }
+    
+    .hero-search button {
+        margin: 0 auto;
+        display: block;
+        width: 40px; 
+        height: 40px;
+    }
+
+    #cursos h3 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+    
+    .card h4 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
 }

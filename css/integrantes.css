@@ -30,7 +30,7 @@ header .container {
     position: absolute;
     left: -100px;
     top:50%;
-    transform: translateY(-50px);
+    transform: translateY(-50%);
     z-index: 10;
     width: 80px;
     height: auto;
@@ -105,9 +105,6 @@ header .container {
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-.card-membro.reverse {
-    flex-direction: row-reverse;    
-}
 
 .membro-foto {
     flex: 0 0 35%;
@@ -208,4 +205,178 @@ footer a {
     width: 30px;
     height: 30px;
     vertical-align: middle;
+}
+
+@media (max-width: 1024px) {
+    header .container {
+        padding: 20px 15px 20px 60px; 
+    }
+
+    .logo-principal {
+        left: -30px; 
+        width: 60px;
+    }
+    
+    .main-nav ul {
+        gap: 15px; 
+    }
+
+    .card-membro {
+        max-width: 95%; 
+        gap: 20px;
+    }
+    
+    .membro-foto {
+        flex: 0 0 35%; 
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0; 
+    }
+    
+    header .container {
+        padding: 10px 20px; 
+        flex-wrap: nowrap; 
+        justify-content: space-between; 
+        gap: 10px;
+    }
+    
+    .main-nav {
+        display: none; 
+    }
+
+    .logo-principal {
+        position: static; 
+        transform: none;
+        width: 35px; 
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+    
+    .logo h1 {
+        font-size: 1.4rem; 
+        white-space: nowrap;
+    }
+    
+    .actions a {
+        padding: 4px 8px; 
+        font-size: 13px;
+    }
+
+    .secao-membros h2 {
+        font-size: 2rem; 
+        margin-bottom: 30px;
+    }
+
+    .card-membro {
+        flex-direction: column; 
+        max-width: 85%; 
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .membro-foto {
+        flex: 0 0 auto;
+        width: 60%; 
+        max-width: 250px; 
+        margin: 0 auto 20px auto; 
+    }
+    
+    .barra-colorida-membro {
+        display: none; 
+    }
+
+    .membro-info {
+        flex: 1;
+        text-align: center; 
+    }
+    
+    .membro-info h2 {
+        font-size: 1.5rem; 
+    }
+
+    .membro-info h3 {
+        margin-bottom: 15px;
+    }
+    
+    .link-social {
+        margin: 5px;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+    
+    footer ul {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.1rem; 
+    }
+    
+    .actions a {
+        padding: 3px 6px; 
+        font-size: 11px; 
+    }
+
+    .secao-membros {
+        padding: 30px 0;
+    }
+    
+    .secao-membros h2 {
+        font-size: 1.6rem; 
+        margin-bottom: 20px;
+    }
+
+    .card-membro {
+        max-width: 95%; 
+        padding: 15px; 
+    }
+    
+    .membro-foto {
+        width: 80%; 
+        max-width: 180px; 
+        margin: 0 auto 15px auto; 
+    }
+    
+    .membro-info h2 {
+        font-size: 1.3rem; 
+    }
+    
+    .membro-info h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .membro-info p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    
+    .link-social {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+
+    footer .container {
+        gap: 10px;
+    }
+    
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    footer ul {
+        margin-top: 5px;
+    }
+    
+    .icone {
+        width: 25px;
+        height: 25px;
+    }
 }
