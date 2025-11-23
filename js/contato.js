@@ -13,5 +13,9 @@ form.addEventListener("submit", (event) => {
 
     if(nomeValue === "" || emailValue === "" || msgValue === ""){
         alert("Os campos: nome, email e mensagem. NÃO podem estar vazios.")
+    } 
+    else 
+    {
+        alert("Mensagem Enviada com sucesso!")
     }
 })

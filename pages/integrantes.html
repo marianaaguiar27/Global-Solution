@@ -7,6 +7,7 @@
     <!--Arquivos CSS-->
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/integrantes.css">
+    <link rel="stylesheet" href="../css/hamburger.css">
 </head>
 <body>
     <!--Wrapper que envolve todo o conteúdo principal-->
@@ -23,8 +24,13 @@
             <div class="logo">
                 <h1>Nossa Equipe</h1>
             </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <!--Menu de navegação-->
-            <nav class="main-nav" aria-label="Navegação principal">
+            <nav class="main-nav" aria-label="Navegação principal" id="menu">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre o Projeto</a></li>
@@ -122,6 +128,6 @@
         </div>
     </footer>
     <!--Fim do rodapé-->
-
+    <script src="../js/nav.js"></script>
 </body>
 </html>

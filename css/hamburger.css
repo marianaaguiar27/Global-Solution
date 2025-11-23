@@ -1,0 +1,42 @@
+@media (max-width: 768px){
+.hamburger {
+    width: 30px;
+    cursor: pointer;
+    margin: 20px;
+}
+.hamburger div {
+    height: 4px;
+    background: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.main-nav {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background: #222;
+    padding: 20px 0;
+    transition: 0.4s;
+}
+.main-nav a {
+    color: white;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.main-nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav a:hover {
+    background: #444;
+}
+.main-nav.open {
+    display: block;
+}
+}

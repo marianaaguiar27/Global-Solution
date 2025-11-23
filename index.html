@@ -7,6 +7,7 @@
     <!--Arquivos CSS-->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
 </head>
 <body>
 
@@ -21,7 +22,12 @@
                 <h1>TechLearn</h1>
             </div>
             <!--Menu de navegação-->
-            <nav class="main-nav" aria-label="Navegação principal">
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="main-nav" aria-label="Navegação principal" id="menu">
             <ul>
                 <li><a href="pages/sobre.html">Sobre o projeto</a></li> 
                 <li><a href="pages/integrantes.html">Quem somos</a></li> 
@@ -50,7 +56,7 @@
                 <form class="hero-search" action="#" method="get" role="search" id="form">
                     <label for="q" class="sr-only">O que você quer aprender?</label>
                     <input id="q" name="q" type="search" placeholder="Ex.: Tecnologia, Excel..."/>
-                    <button type="submit" id="btn"></button>
+                    <button type="submit"></button>
                 </form>
             </div>
         </section>
@@ -110,6 +116,7 @@
         </div>
     </footer>
     <!--Fim do rodapé-->
-    <script src="js/index.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/nav.js"></script>
 </body>
 </html>
